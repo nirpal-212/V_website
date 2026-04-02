@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Vaishnavi Enterprises</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1 class="logo">New Vaishnavi Enterprises</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="/login">Admin</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Precision Manufacturing & Plating Solutions</h1>
+    <p>Trusted Industry Partner Since 2016</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        New Vaishnavi Enterprises is a leading manufacturing unit located in MIDC Waluj,
+        Chhatrapati Sambhajinagar. We specialize in high-quality machined components
+        and advanced plating services with a strong focus on precision and quality.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Machined Parts</h3>
+            <p>Metallic inserts, bushes, spacers, pipe cutting and precision components.</p>
+        </div>
+
+        <div class="card">
+            <h3>Plating Services</h3>
+            <p>Zinc plating with black, blue, yellow finishes and passivation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Quality Assurance</h3>
+            <p>We ensure high precision and industry-standard quality in every product.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Our Work</h2>
+
+    <div class="gallery">
+        <img src="/static/img1.jpeg">
+        <img src="/static/img2.jpeg">
+        <img src="/static/img3.jpeg">
+        <img src="/static/img4.jpeg">
+        <img src="/static/img5.jpeg">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Office Address</h3>
+            <p>MIDC Waluj, Chhatrapati Sambhajinagar</p>
+        </div>
+
+        <div class="card">
+            <h3>Dnyaneshwar Nirphal</h3>
+            <p>📞 7588807647</p>
+        </div>
+
+        <div class="card">
+            <h3>Sominath Sultane</h3>
+            <p>📞 9552292674</p>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+        <h3>Send Inquiry</h3>
+
+        <form method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+            <input type="text" name="phone" placeholder="Your Phone" required><br><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if success %}
+            <p style="color: lightgreen;">Message sent successfully!</p>
+        {% endif %}
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 New Vaishnavi Enterprises | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
